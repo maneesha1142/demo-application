@@ -3,7 +3,7 @@ name: java CI
 on:
   push: 
     branches : [main]
-  pull-request :
+  pull_request :
     branches : [main]
 
 jobs :
@@ -21,4 +21,4 @@ jobs :
           distribution : 'temurin'
 
       - name : build app
-        uses : mvn -B clean package 
+        run : mvn -B clean package 
